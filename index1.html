@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <style>
+      p {
+        color: blue;
+      }
+      #one {
+        color: red;
+      }
+      .hexk {
+        color: green;
+      }
+    </style>
+  </head>
+  <body style="display: flex; flex-direction: column; align-items: center">
+    <div style="background-color: #ffff; text-align: center; padding: 10px">
+      <img src="logo.jpg" alt="smiley face" width="160" height="160" />
+    </div>
+    <div style="text-align: center; padding: 0px; font-size: 45px">
+      <kwc style="background-color: #17a9e8e6"><b>管理施工</b></kwc>
+    </div>
+    <div
+      style="
+        background-color: aqua;
+        border: 25px solid green;
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 15px;
+        line-height: 1.7;
+      "
+    >
+      <p>
+        一、开工前了解施工工况，包括风向、水流、潮汐、土质、物资运输路线、物资储备用地；
+      </p>
+      <p>
+        二、了解与各相关公司、各岗位上的负责人，以便在整个工程期间的沟通和接触。确认浚前数据、疏浚范围、投影模型：通用横轴墨卡托（UTM
+        North & UTM South 【使用平均中央子午线，长度比0.9996】）全球通用；
+      </p>
+      <p>
+        三、所有疏浚船上的施工图和项目部的保持一致，最好是一次性把所有施工区施工图都做好，保证每艘船都有，如果疏浚船的大小不一样，那么就以不一样数，做该数的版本。——<kwc
+          style="background-color: yellow"
+          >便于随时调整</kwc
+        >
+      </p>
+      <p class="hexk">
+        四、疏浚船每天定时发施工日报（内容包括：施工进尺XY坐标与移船前后XY坐标、疏浚时间、停工时间、停工内容、燃料库存、燃料加注数量、燃料消耗、潮汐、打水沱深）；轮机日报（内容包括：各主机辅机运转速度、油温水温排温、齿轮箱温变速箱温、油压水压、启停时间、启停工作内容、燃料情况）；——<kwc
+          style="background-color: yellow"
+          >便于动态跟踪</kwc
+        >
+      </p>
+      <p id="one">
+        五、以每天的日报绘制CAD进尺图（可以详细到每个操作人的进尺坐标和挖深情况），Excel制表（疏浚数据库），用Power
+        pivot 和 Tableau
+        public调用以及Excel数据透视，可以全方位的查看和分析疏浚情况、质量控制和成本控制——<kwc
+          style="background-color: yellow"
+          ;
+          >全息可视化构建</kwc
+        >
+      </p>
+      <p>
+        六、测量数据用Hypack 和 Civil 3D分析动态查询各个区域水深情况，Civil
+        3D可以随意快速筛选各水深区间的面积，可以3D建模，可以动态断面查看，可以分析流域情况（可以分析出回淤源）。
+      </p>
+      <p>
+        使用软件推荐AUTO CAD → HIMAX → WPS & EXCEL → POWER PIVOT & TABLEAU →
+        HYPACK → CIVIL 3D → 测量员APP & AREA MEASUREMENT APP → Global Mapper
+        AOTU CAD搭配WPS&EXCEL函数可以不用南方cass
+        ；WPS可以无成本多人协作，但WPS使用VBA和数据透视需要会员，所以WPS&EXCEL混着用；OFFICE
+        2016以上版本才用POWER PIVOT 如果没有的话就用 TABLEAU
+        数据格式都是通用也可以用函数和if语句和布尔逻辑；HYPACK依然是那么强大、不得不说CICIL
+        3D更强大可以直接替换掉CAD用，除了测量之外几乎可以替换HYPACK；测量员APP几乎可以使测量员轻装上阵，单点定位精度3米之内我校队过，一款很强大的APP谁用谁知道；AREA
+        MEASUREMENT是国外有的手机用不了测量员APP所以没办法，不过得搭配GLOBAL
+        MAPPER使用，kml文件需要用GLOBAL转换，谷歌的kml文件也可以转换。想看实时动态（一个星期更新一次）卫星图的推荐个网站，但是需要翻墙。<a
+          href="https://services.sentinel-hub.com/"
+          >实时卫星图更新网站</a
+        >
+      </p>
+      <p>用户名：<input type="text" /></p>
+      <p>邮箱：<input type="email" name="" id="" /></p>
+      <p></p>
+    </div>
+    <div
+      style="
+        background-color: #17a9e8e6;
+        text-align: center;
+        padding: 40px;
+        font-size: 18px;
+      "
+    >
+      <p id="toow">我的网站</p>
+      <a href="https://liyf.xyz">友情链接</a>
+    </div>
+  </body>
+</html>
